@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TV-assignment-app</string>
+    <!--    page3-->
+    <string name="consult">Consult specialist</string>
+<!--        page4-->
+    <string name="sort_by">Sort by</string>
+    <string name="exp"> years experience</string>
+    <string name="next_availibilty"> Next Availibilty</string>
+    <string name="at">At</string>
+    <string name="schedule">SCHEDULE NOW</string>
+
+<!--    page5-->
+    <string name="upcoming_consult">Upcoming consultation</string>
+    <string name="am">AM</string>
+    <string name="doctors_consulted">Doctors you have consultated</string>
+    <string name="consult_specialist">Consult Specialist</string>
+
+</resources>

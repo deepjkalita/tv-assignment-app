@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".Activities.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--    top section of logo and profile image-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+            <!--        logo-->
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="29dp"
+                android:src="@drawable/logo_main3x"
+                android:layout_marginLeft="18dp"
+                ></ImageView>
+<!--            profile pic-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+
+                    android:layout_marginRight="12dp"
+                    app:cardCornerRadius="20dp">
+                    <ImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_width="32dp"
+
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                         />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+        <!--    horizontal line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9.5dp"
+            android:layout_gravity="center"
+            android:background="#EFEFEF"
+            ></View>
+
+        <FrameLayout
+
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#29323A"
+        app:fabCradleMargin="5dp"
+        app:fabCradleVerticalOffset="5dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemIconTint="#FFFFFF"
+
+            app:labelVisibilityMode="unlabeled"
+            app:elevation="0dp"
+
+
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="right"
+        app:layout_anchor="@id/bottomAppBar">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginTop="57dp"
+
+
+            app:cardCornerRadius="15dp">
+            <ImageView
+                android:id="@+id/profile_pic_bottom"
+                android:layout_width="25dp"
+
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                 />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/fab"
+       android:layout_width="68dp"
+       android:layout_height="68dp"
+       android:backgroundTint="#F05569"
+        android:src="@drawable/cross_shape"
+       android:layout_margin="16dp"
+       app:layout_anchor="@id/bottomAppBar">
+
+
+   </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

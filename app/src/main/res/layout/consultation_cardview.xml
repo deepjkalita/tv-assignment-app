@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="123dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#F0F0F0"
+    app:cardElevation="0dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--        profile picture-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+
+            app:cardCornerRadius="28dp">
+            <ImageView
+                android:id="@+id/doctor_image"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+
+                android:scaleType="fitXY"
+
+                 />
+        </androidx.cardview.widget.CardView>
+
+<!--        details-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#40484F"
+            android:id="@+id/doctor_name"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Dr. Sunitha Vasudevan"></TextView>
+        <!--            category-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_regular"
+            android:id="@+id/category"
+            android:layout_gravity="center_horizontal"
+            android:text="Dermatologist"></TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/colorCategoryBox"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginHorizontal="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--    category icon-->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/category_image"
+            android:src="@drawable/knee3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp">
+        </ImageView>
+        <!--    category name-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" entrologist"
+            android:id="@+id/category_name"
+            android:textColor="#000000"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+
+            android:textSize="14dp"
+            ></TextView>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

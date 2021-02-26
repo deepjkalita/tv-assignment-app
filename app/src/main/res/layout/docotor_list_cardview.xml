@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    app:cardElevation="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<!--        1st box-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <!--        profile picture-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="40dp">
+                <ImageView
+                    android:id="@+id/doctor_image"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                     />
+            </androidx.cardview.widget.CardView>
+<!--            doctor details-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/doctor_name"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Dr Sunitha Vasudevan"
+                    android:textSize="18dp"
+                    android:textColor="#40484F"></TextView>
+                <!--            experience-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:id="@+id/experience"
+                    android:text="20 years experience"></TextView>
+                <!--            qualification-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:id="@+id/qualification"
+                    android:text="MS.MD"></TextView>
+                <!--            category-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="13dp"
+                    android:id="@+id/job_role"
+                    android:text="Dermatologist"></TextView>
+
+
+
+
+
+            </LinearLayout>
+            <!--        price-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/price"
+                android:text="Rs 500"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#40484F"
+                android:gravity="right"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="15dp"
+                android:textSize="21dp"></TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="#EFEFEF"
+            ></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+<!--            availibility-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/next_availibilty"></TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/at"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:fontFamily="@font/roboto_regular"
+                        android:id="@+id/availibilty"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="5:30 PM"></TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--                schedule now-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/schedule"
+                android:textColor="#D83345"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:textSize="14dp"></TextView>
+        </LinearLayout>
+
+        
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
